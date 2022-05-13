@@ -124,14 +124,14 @@ async function listiraamatud() {
 
     for (let raamat of responseData) {
         resultElement.innerHTML +=
-            '<a href="http://localhost:5000/raamatud/' +
+            '<a https://praks11raamatud.azurewebsites.net/raamatud/' +
             raamat +
             '"  download="' +
             raamat +
             '.txt" >' +
             raamat +
             ".txt</a> " +
-            '<a href="#" onclick="deleteObject(\'http://localhost:5000/raamatud/' +
+            '<a href="#" onclick="deleteObject(\'https://praks11raamatud.azurewebsites.net/raamatud/' +
             raamat +
             "')\" > [kustuta]</a>" +
             "<br />";
