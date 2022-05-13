@@ -116,7 +116,7 @@ async function handleFormSubmit(event) {
 }
 
 async function listiraamatud() {
-    const responseData = await getDataAsJson("http://localhost:5000/raamatud");
+    const responseData = await getDataAsJson("https://praks11raamatud.azurewebsites.net/raamatud");
 
     const resultElement = document.getElementById("raamatud_result");
 
