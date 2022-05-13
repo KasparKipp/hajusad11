@@ -116,7 +116,7 @@ async function handleFormSubmit(event) {
 }
 
 async function listiraamatud() {
-    const responseData = await getDataAsJson("https://praks11raamatud.azurewebsites.net/raamatud");
+    const responseData = await getDataAsJson("https://raamatudapp.azurewebsites.net/raamatud");
 
     const resultElement = document.getElementById("raamatud_result");
 
@@ -124,14 +124,14 @@ async function listiraamatud() {
 
     for (let raamat of responseData) {
         resultElement.innerHTML +=
-            '<a https://praks11raamatud.azurewebsites.net/raamatud/' +
+            '<a https://raamatudapp.azurewebsites.net/raamatud/' +
             raamat +
             '"  download="' +
             raamat +
             '.txt" >' +
             raamat +
             ".txt</a> " +
-            '<a href="#" onclick="deleteObject(\'https://praks11raamatud.azurewebsites.net/raamatud/' +
+            '<a href="#" onclick="deleteObject(\'https://raamatudapp.azurewebsites.net/raamatud/' +
             raamat +
             "')\" > [kustuta]</a>" +
             "<br />";
