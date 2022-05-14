@@ -124,7 +124,7 @@ async function listiraamatud() {
 
     for (let raamat of responseData) {
         resultElement.innerHTML +=
-            '<a https://raamatudapp.azurewebsites.net/raamatud/' +
+            '<a href="https://raamatudapp.azurewebsites.net/raamatud/' +
             raamat +
             '"  download="' +
             raamat +
