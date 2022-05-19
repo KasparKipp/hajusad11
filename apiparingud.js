@@ -1,4 +1,4 @@
-// Credit goes to Simon Plenderleith.  https://simonplend.com/how-to-use-fetch-to-post-form-data-as-json-to-your-api/
+//// Credit goes to Simon Plenderleith.  https://simonplend.com/how-to-use-fetch-to-post-form-data-as-json-to-your-api/
 
 async function postFormDataAsJson({ url, formData }) {
     /**
